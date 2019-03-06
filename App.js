@@ -1,22 +1,22 @@
-// S3.1: Importar lo necesario de React y RN
+// S4.1: Importar lo necesario de React y RN
 import React from "react";
 import { Button, Text, View, TouchableOpacity, StyleSheet } from "react-native";
 import Ionicons from "react-native-vector-icons/Ionicons";
 
-//S3.2: importar createStackNavigator, createBottomTabNavigator, createAppContainer en el proyecto
+//S4.2: importar createStackNavigator, createBottomTabNavigator, createAppContainer en el proyecto
 import {
   createStackNavigator,
   createBottomTabNavigator,
   createAppContainer
 } from "react-navigation";
 
-//S3.3: Importar las páginas que se usarán en el stack
+//S4.3: Importar las páginas que se usarán en el stack
 import Inicio from "./pages/Inicio";
 import Config from "./pages/Config";
 import Detalles from "./pages/Detalles";
 import Perfil from "./pages/Perfil";
 
-//S3.4: Se crea el InicioStack usando createStackNavigator
+//S4.4: Se crea el InicioStack usando createStackNavigator
 const InicioStack = createStackNavigator(
   {
     //Definición de la Navegación para el Inicio
@@ -36,7 +36,7 @@ const InicioStack = createStackNavigator(
   }
 );
 
-//S3.5: Se crea el ConfigStack usando createStackNavigator
+//S4.5: Se crea el ConfigStack usando createStackNavigator
 const ConfigStack = createStackNavigator(
   {
     //Definición de la Navegación para la pantalla de Detalles
@@ -57,7 +57,7 @@ const ConfigStack = createStackNavigator(
   }
 );
 
-//S3.6: Creando el navegador del footer
+//S4.6: Creando el navegador del footer
 const App = createBottomTabNavigator(
   {
     Inicio: { screen: InicioStack },
