@@ -1,7 +1,7 @@
 import React from "react";
 import { Text, View, TouchableOpacity, StyleSheet } from "react-native";
 
-export default class ProfileScreen extends React.Component {
+export default class Perfil extends React.Component {
   //S7: Pantalla de Perfil para mostrar al abrir el botón Abrir Perfil
   render() {
     return (
