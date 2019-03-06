@@ -2,7 +2,7 @@ import React from "react";
 import { Text, View, TouchableOpacity, StyleSheet } from "react-native";
 
 export default class Inicio extends React.Component {
-  //Pantalla de Inicio para mostrar en la opción Inicio
+  //S6: Pantalla de Inicio para mostrar en la opción Inicio
   render() {
     return (
       <View style={{ flex: 1, justifyContent: "center", alignItems: "center" }}>
